@@ -1,0 +1,142 @@
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(212, 214, 204);
+    font-family: 'Roboto';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper{
+    width: 70vw;
+    height: 100vh;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-rows: 0.5fr 3fr;
+    background-color: greenyellow;
+}
+
+header{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-row: 1 / 2;
+}
+
+.main-container{
+    display: grid;
+    grid-template-columns: 1.3fr 3fr;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.sidebar{
+    background-color: rgb(65, 63, 63);
+    grid-column: 1 / 2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.books{
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding: 2em;
+    justify-items: center;
+    align-items: center;
+    gap: 1em;
+    overflow-y: auto;
+}
+
+.book-card{
+    width: 80%;
+    height: auto;
+    background-color: white;
+    border-radius: 1em;
+    border-left: solid 5px #fbbf24;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap:  0.5em;
+    box-shadow: 2px 2px 5px grey;
+}
+
+.delete-button, .read-button{
+    width: 50%;
+    height: 15%;
+    /* background-color: greenyellow; */
+    border: none;
+    border-radius: 0.5em;
+}
+
+.delete-button{
+    background-color: rgb(255, 31, 31);
+    color: white;
+}
+
+.read-button{
+    background-color: rgb(39, 160, 247);
+    color: white;
+}
+
+form{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 20em;
+}
+
+form h1{
+    color: #D3D3D3;
+    margin-bottom: 0.5em;
+}
+
+.form-element{
+    margin-bottom: 0.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    color: #D3D3D3;
+    margin-left: 0.2em;
+}
+
+input{
+    height: 2.5em;
+    border-radius: 0.5em;
+    padding: 0.3em;
+}
+
+#submit-button{
+    padding: 0.3em;
+}
+
+
